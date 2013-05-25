@@ -1,0 +1,60 @@
+---
+layout: default
+title: sdunster.com &mdash; Name Assistant
+class: project
+---
+
+<span class="box-float-right"><a href="http://download.sdunster.com/Name_Assistant-0.1.dmg">Download DMG</a></span>
+<h1>Name Assistant</h1>
+<h2>Description</h2>
+<p>Name Assistant makes it easy to bulk-add large numbers of computers to a configured
+Mac OS X directory services directory, and name and number them appropriately.</p>
+<p>Simply copy the application to a network account and set it to launch at login, then
+login to each computer to be named as that user.</p>
+<p>From here you can collect the MAC addresses of all computers and number them, before
+adding them to the directory.</p>
+<p>If you apply the "Name computer based on directory name" option in Workgroup Manager
+upon reboot the computers will automatically begin using the name set using Name Assistant.</p>
+
+<h2>Requirements</h2>
+<ul>
+<li>Client software only tested on 10.6 though I believe it works on 10.5 but cannot add
+computers to groups.</li>
+<li>Will work with any directory server that the client OS supports. OpenDirectory 10.4 - 10.7 should be fine and ActiveDirectory should work too if configured properly, though untested.</li>
+</ul>
+
+<h2>Detailed setup and management</h2>
+<p>Coming soon...</p>
+
+<h2>Known Issues</h2>
+<ul>
+<li>Adding computers to ComputerGroup only works on 10.6 at the moment</li>
+<li>Once a client has connected to a Name Assistant Master it will not reconnect to that
+master or any other master until the program is relaunched</li>
+<li>If a master crashes it might take 5 mins for it's Bonjour net service to dissapear off
+the local area network. Clients might be unable to connect to a master until the record
+has dissapeared</li>
+<li>Next number is always 0 until the first number is allocated</li>
+<li>The statusbar at the bottom of the master window isn't accurate</li>
+<li>Resetting the clients using the master does not reset the "next number" display</li>
+<li>Incorrect directory admin credentials results in a dsimport error code 65</li>
+</ul>
+
+<h2>Todo</h2>
+<ul>
+<li>Change background color of window depending on status</li>
+<li>When selecting a computer in the list view, make it's background color go blue</li>
+</ul>
+
+<h2>Comments</h2>
+<p>Please submit any questions/bugs/suggestions using the form below - I like feedback.</p>
+<!-- comments -->
+<script type="text/javascript">
+var idcomments_acct = 'fe67813aea7e2a57f1bb2575bf11721b';
+var idcomments_post_id = 'project-nameassistant';
+var idcomments_post_url;
+var idcomments_post_title = 'Name Assistant';
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+

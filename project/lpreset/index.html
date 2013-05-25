@@ -1,0 +1,37 @@
+---
+layout: default
+title: sdunster.com &mdash; lpreset
+class: project
+---
+
+
+<span class="box-float-right"><a href="http://download.sdunster.com/lpreset-1.1.dmg">Download DMG</a></span>
+<h1>lpreset</h1>
+<h2>Updated - 6/09/2010</h2>
+<p>Fixes a case where printers weren't removed. Recommended update.</p>
+<h2>Description</h2>
+<p>lpreset removes all mcx-created printers from the system at startup, effectively resetting all printers set via Workgroup Manager. During the next network logon the printers will be automatically recreated. It should remove all software-based printer problems such as paused printers and has the added effect of removing all print jobs from the queue at restart. Tested on Mac OS X 10.5 and Mac OS X 10.6.</p>
+<p>The installer will install lpreset into /usr/local/bin, which is in the default Mac OS X $PATH, meaning you can launch it by typing lpreset at the command prompt (Terminal) where you will be asked for an admin password.</p>
+<p>It also installs a launchd LaunchDaemon plist into /Library/LaunchDaemons which is responsible for launching lpreset at startup.</p>
+<p>You can run this tool through ARD by choosing "Send UNIX command...", entering "lpreset" and entering "root" in the user field. Normally this would not be necessary however as lpreset is run on startup, so you can just tell your users to restart their machine to fix printing.</p>
+<h2>Requirements</h2>
+<ul>
+<li>Mac OS X 10.5 - 10.6 (untested on &lt; 10.5).</li>
+<li>Client machines with printer settings managed by MCX (Workgroup Manager).</li>
+<li>Printer users must be network users - local users would normally get access to MCX printers as well, but this may not be the case if lpreset removes them on boot.</li>
+<li>Works best when computers are restarted/shut down regularly.</li>
+</ul>
+
+<h2>Comments</h2>
+<p>Please submit any questions/bugs/suggestions using the form below - I like feedback.</p>
+<!-- comments -->
+<script type="text/javascript">
+var idcomments_acct = 'fe67813aea7e2a57f1bb2575bf11721b';
+var idcomments_post_id = 'project-lpreset';
+var idcomments_post_url;
+var idcomments_post_title = 'lpreset';
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+
+

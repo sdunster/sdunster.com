@@ -1,0 +1,32 @@
+---
+layout: default
+title: sdunster.com &mdash; Set SUS
+class: project
+---
+
+<span class="box-float-right"><a href="http://download.sdunster.com/setsus-1.0.zip">Download ZIP</a></span>
+<h1>Set Software Update Server</h1>
+<h2>Description</h2>
+<p>Download this script, edit it to set your own software update server and then double click on any machine to automatically set the correct CatalogURL on any client machine 10.4, 10.5 or 10.6. The script will also show you the currently set server and provide the option to remove it.</p>
+<p>To edit the file simply drop the AppleScript application icon directly onto AppleScript Editor inside Utilities. Inside the file you will see the following code snippet near the top of the file.
+<pre>-- change this to address of 10.6 software update server
+property sus : &quot;http://sus.mydomain:8088/&quot;</pre>
+Just change the address in double quotes to the location of your software update server and save the file.</p>
+<h2>Requirements</h2>
+<ul>
+<li>Mac OS X 10.4 - 10.6</li>
+<li>Mac OS X Software Update Server 10.6 (untested &lt; 10.6 - and I'm fairly sure it won't work)
+</ul>
+
+<h2>Comments</h2>
+<p>Please submit any questions/bugs/suggestions using the form below - I like feedback.</p>
+<!-- comments -->
+<script type="text/javascript">
+var idcomments_acct = 'fe67813aea7e2a57f1bb2575bf11721b';
+var idcomments_post_id = 'project-setsus';
+var idcomments_post_url;
+var idcomments_post_title = 'Set SUS';
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+
