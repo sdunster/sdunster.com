@@ -85,6 +85,58 @@ a:hover {
 	float: right;
 }
 
+/* icons */
+i.icon-home {
+	background-image: url(/img/icon-home.png);
+	background-size: contain;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+i.icon-github {
+	background-image: url(/img/icon-github.png);
+	background-size: contain;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+i.icon-linkedin {
+	background-image: url(/img/icon-linkedin.png);
+	background-size: contain;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+i.icon-twitter {
+	background-image: url(/img/icon-twitter.png);
+	background-size: contain;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+i.icon-facebook {
+	background-image: url(/img/icon-facebook.png);
+	background-size: contain;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+a:hover i.icon-home {
+	background-image: url(/img/icon-home-hover.png);
+}
+a:hover i.icon-github {
+	background-image: url(/img/icon-github-hover.png);
+}
+a:hover i.icon-linkedin {
+	background-image: url(/img/icon-linkedin-hover.png);
+}
+a:hover i.icon-twitter {
+	background-image: url(/img/icon-twitter-hover.png);
+}
+a:hover i.icon-facebook {
+	background-image: url(/img/icon-facebook-hover.png);
+}
+
 header {
 	background-color: #1631ac;
 	text-align: right;
@@ -103,6 +155,17 @@ header h2 {
 	font-size: 24px;
 	margin: 0;
 	color: #a6c2ff;
+}
+
+header .icons {
+	margin-top: 30px;
+}
+
+header .icons a i {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-left: 20px;
 }
 
 article {
