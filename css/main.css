@@ -73,6 +73,14 @@ a {
 	text-decoration: none;
 }
 
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a {
+	color: inherit;
+}
+
 a:hover {
 	text-decoration: underline;
 }
@@ -85,75 +93,21 @@ a:hover {
 	float: right;
 }
 
-/* icons */
-i.icon-home {
-	background-image: url(/img/icon-home.png);
-	background-size: contain;
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-}
-i.icon-github {
-	background-image: url(/img/icon-github.png);
-	background-size: contain;
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-}
-i.icon-linkedin {
-	background-image: url(/img/icon-linkedin.png);
-	background-size: contain;
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-}
-i.icon-twitter {
-	background-image: url(/img/icon-twitter.png);
-	background-size: contain;
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-}
-i.icon-facebook {
-	background-image: url(/img/icon-facebook.png);
-	background-size: contain;
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-}
-a:hover i.icon-home {
-	background-image: url(/img/icon-home-hover.png);
-}
-a:hover i.icon-github {
-	background-image: url(/img/icon-github-hover.png);
-}
-a:hover i.icon-linkedin {
-	background-image: url(/img/icon-linkedin-hover.png);
-}
-a:hover i.icon-twitter {
-	background-image: url(/img/icon-twitter-hover.png);
-}
-a:hover i.icon-facebook {
-	background-image: url(/img/icon-facebook-hover.png);
-}
-
 header {
 	background-color: #1631ac;
 	text-align: right;
-	margin: 40px 0;
-	padding: 30px 7%;
+	margin: 20px 0;
+	padding: 30px 5%;
 	color: white;
 }
 
 header h1 {
-	font-size: 72px;
-	margin: 0;
+	font-size: 4.0em;
 	margin-bottom: 20px;
 }
 
 header h2 {
-	font-size: 24px;
-	margin: 0;
+	font-size: 1.5em;
 	color: #a6c2ff;
 }
 
@@ -169,42 +123,85 @@ header .icons a i {
 }
 
 article {
-	padding: 0 7%;
-	margin: 40px 0;
+	padding: 0 5%;
 }
 
 article h1 {
-	font-size: 24px;
+	font-size: 1.5em;
 	color: #0023c0;
 }
 
 article h2 {
-	font-size: 20px;
+	font-size: 1.25em;
 	color: black;
 }
 
 footer {
-	margin: 20px 0;
 	background-color: #1631ac;
-	padding: 10px 7%;
 	color: white;
-	font-weight: bold;
-	font-size: 24px;
-	color: white;
+	padding: 20px 5%;
 }
 
-footer .right {
+footer h2 {
 	color: #a6c2ff;
-	text-size: 24px;
+	font-weight: bold;
+	margin: 0;
+	text-align: center;
+}
+
+footer ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+footer ul li {
+	text-align: center;
+}
+
+footer ul li a {
+	color: white;
 }
 
 .copyright {
-	font-size: 10px;
+	font-size: 0.8em;
 	text-align: center;
 	color: #aaaaaa;
 	margin: 10px 0;
 }
 
+body.contact ul.options {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+body.contact ul.options li {
+	display: inline;
+}
+
+body.contact ul.options li button {
+	background-color: #DDDDDD;
+	display: inline-block;
+	border: none;
+	padding: 10px 20px;
+	margin-left: 20px;
+	text-align: left;
+}
+
+body.contact ul.options li button.selected {
+	background-color: #1631ac;
+}
+
+body.contact ul.options li button h2 {
+	margin: 0;
+}
+
+body.contact form {
+	background-color: #DDDDDD;
+	padding: 20px;
+	/*display: none;*/
+}
 
 /* ==========================================================================
    Media Queries
@@ -220,6 +217,28 @@ footer .right {
        (min-resolution: 120dpi) {
 
 }
+
+@media only screen and (max-width: 600px) {
+	body {
+		font-size: 0.9em;
+	}
+
+	header {
+		padding: 15px 5%;
+	}
+	
+	header h1 {
+		font-size: 2.5em;
+		margin-bottom: 0;
+		text-align: left;
+	}
+	
+	header h2 {
+		display: none;
+		font-size: 1.1em;
+	}
+}
+
 
 /* ==========================================================================
    Helper classes
